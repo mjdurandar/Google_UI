@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-size: 17px;
+        color: #555;
+    }
+
+    nav{
+        display:flex;
+        justify-content: end;
+        padding: 20px 10px;
+        height: 60px;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        align-items: center;     
+    }
+    
+    li{
+        text-align: center;
+        padding: 14px 12px;
+    }
+
+    li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .small_text{
+        font-size: 0.9rem;
+    }
+
+    .menu_bg{
+         width: 60px;
+         height: 60px;
+        /* background-color: red;  */
+    }
+    .menu_bg:hover{      
+       background-color: rgba(100, 100, 100, 0.1);
+       border-radius:50%;
+   }
+
+    .menu_button{
+        width: 35px;
+        height: 35px;  
+    }
+
+    .profile_pic{
+        width:35px;
+        border-radius: 50%;
+        margin-top: 8px;
+    }
+    .profile_pic:hover{
+       cursor: pointer;
+    }
+
+
+    .search_wrapper {
+        height: 45.4vh;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    input {
+        width: 580px;
+        height:45px;
+        padding-left: 50px;
+        font-size: 1.2rem;
+        border-radius: 45px;
+        border: 1px solid #d3d3d3;
+    }
+
+    input:hover {
+        box-shadow: 0 1px 3px 1px rgba(201,201,201,0.5);
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .search{
+        width: 25px;
+        height: 25px;
+        position:absolute;
+        top: 19em;
+        left:29em ;
+    }
+
+    .search{
+        cursor: pointer;
+    }
+
+    .mic{
+        width: 20px;
+        height: 20px;
+        position:absolute;
+        top: 19em;
+        left:57em ;
+    }
+
+    .mic{
+        cursor: pointer;
+    }
+
+    .camera{
+        width: 35px;
+        height: 35px;
+        position:absolute;
+        top: 18.6em;
+        left:59em ;
+    }
+
+    .camera{
+        cursor: pointer;
+    }
+
+    .googlemain{
+        display: flex;
+        justify-content: center;
+        margin-top: 6em;
+        padding: 0 0 3em 0;
+    }
+
+    button {
+        border:1px solid transparent;
+        padding: 8px 12px;
+        background-color: #F8F9FA;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        border: 1px solid #eee;
+        box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.3);
+        cursor: pointer;
+    }
+
+    .buttons{
+        padding: 1em;
+        width: 350px;
+        margin: auto;
+
+    }
+
+    .text_under{
+        padding: 1em;
+        width: 350px;
+        margin-left: 8em;
+    }
+
+    .filipino:hover{
+        text-decoration: underline;
+    }
+
+    .cebuano:hover{
+        text-decoration: underline;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .panel{
+        border-bottom: 1px solid #ddd;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px;
+    }
+    
+    .phil{
+        padding: 3px 13px 13px 13px;
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+         
+            <ul>
+                <li><a class="small_text" href="#">Gmail</a></li>
+                <li><a class="small_text" href="#">Images</a></li>
+                <li class="menu_bg"><img class="menu_button" src="menu_icon.png" alt="Menu Icon"></li>
+                <li><img class="profile_pic" src="googleprofile.png" alt="Menu Icon"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="googlemain"> <h1><span style="font-size:5em; color:#4285F4" >G</span><span style="font-size:5em; color:#EA4335">o</span><span style="font-size:5em; color:#FBBC05">o</span><span style="font-size:5em;color:#4285F4">g</span><span style="font-size:5em; color:#34A853">l</span><span style="font-size:5em; color:#EA4335">e</span></h1>
+
+    </div>
+    <section class="search_wrapper">
+           
+            <img class="search" src="googleglass.png">
+            <img class="mic" src="googlemic.png">
+            <img class="camera" src="googlecamera.JPG">
+            <form>
+                <input type="text">
+            <div class="buttons">
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="text_under">
+                <p>Google offered in:<a class="filipino" href="" style="color:blue;"> Filipino</a> <a class="cebuano" href="" style="color:blue;" > Cebuano </a> </p>
+            </div>
+            </form>
+    </section>
+    <footer>
+        <div class="panel">
+            <p class="phil">Philippines</p>
+            
+        </div>
+        <div class="panel">
+            <ul>
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
